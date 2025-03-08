@@ -1,0 +1,17 @@
+1 - Criar um banco de dados para ver a disponibilidade de livros e o estoque de cada um, analisar o estoque e fazer a listagem dos livros que sobraram
+2 - Criar uma página para ver o interesse  de leitura dos alunos/professores, uma automação que filtre os livros por feedback exação,terror,drama etc...
+3 - Catálogo digital
+4 - Empréstimo online
+5 -Segurança
+6- Sistema de cadastro
+7- Tempo de resposta
+8 - Backup 
+9 - Localidade
+10 - Desempenho
+
+funcionais : 1 , 2
+
+não funcionais : 7 , 8, 9, 10
+
+
+requisitos funcionais e não funcionais de uma biblioteca que queira se atualizar na informatica
