@@ -1,0 +1,23 @@
+Requisitos Funcionais:
+
+Login de Usuário: O sistema deve permitir que o usuário faça login com um nome de usuário, e-mail e senha.
+Recuperação de Senha: caso o usuário tenha esquecido a senha, o sistema enviara um link para o e-mail cadastrado.
+Validação de E-mail no Cadastro: O sistema deve validar se o e-mail inserido.
+
+
+
+Requisitos não Funcionais:																				
+Segurança : o sistema deve criptografar as senhas e as informações dos usuários
+Desempenho : o tempo de resposta da interface deve ser rápido
+Interface : interface simples e fácil de mexer
+
+Requisitos de Negócio:
+
+Validação de senha/e-mail
+Bloqueio de Conta por Tentativas Falhas: O sistema deve bloquear a conta do usuário após 5 tentativas de login falhas e espera um tempo.
+
+
+
+
+
+
