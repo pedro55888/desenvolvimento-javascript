@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de Repetições</title>
+</head>
+<body>
+    <h1>Exemplo de Repetições</h1>
+
+    <script>
+
+        for(var a = 0; a < 5; a++){
+            console.log("Repetição com FOR",a);
+        }
+
+        for(var i = 1; i <= 10; i+=2){  //Está em impares, para deixar os pares só colocar o valor de i para 0
+            console.log(i)
+        }
+
+        var alunos = ["João", "Maria", "José", "Pedro"];
+        for (var i = 0; i < alunos.length; i++) {
+        console.log(alunos[i]);
+        }
+        
+        delete alunos[0];
+        for(var aluno of alunos){
+            console.log(aluno)
+        }
+
+        var carro = {
+            "ano" : 2025,
+            "Modelo" : "Fusca",
+            "Cor" : "Branco"
+        }
+
+        for(var chave in carro){
+            console.log(carro[chave]);
+        }
+
+        var contador = 0;
+        
+
+        while (contador<  5 ){
+            console.log(contador)
+            contador ++;
+        }
+
+        
+        numero = 0;
+        soma = 0;
+
+        while (numero <= 10){
+            soma += numero; 
+            numero++;
+        }
+
+    console.log(soma);
+
+    var y = 0;
+
+    while (y <=20){
+        y++
+        if (y % 2 != 0){
+            continue;
+        }
+        console.log(y);
+    }   
+
+    var count = 10;
+    do{
+        console.log(count);
+        count++;
+    } while(count <5)
+   
+    
+
+
+
+
+    </script>
+    
+</body>
+</html>
