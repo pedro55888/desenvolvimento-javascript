@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Funçoes</title>
+</head>
+<body>
+    
+    <script>
+
+//função para verificar se o numero é par ou impar
+
+    function par(num){
+        if (num %2 ==0){
+            return "O número é par";
+        }
+        else{
+            return "O número é impar";
+        }
+    }
+    console.log(par(2))
+    console.log(par(3))
+    console.log(par(4))
+
+
+
+    //gerar tabuada,lista array[10,5,3,8,2]
+    function gerarTabuada(numeros) {
+    numeros.forEach(function(numero) {
+        console.log(`Tabuada do ${numero}`);
+        for (var j = 1; j <= 10; j++) {
+            console.log(`${numero} x ${j} = ${numero * j}`);
+        }
+    });
+}
+
+gerarTabuada([10, 5, 3, 8, 2]);
+
+//IMC, receber peso e altura e calcular imc
+//Verificar se a pessoa está abaixo do pesom peso normal, sobrepeso ou obesidade
+//abaixo de 18.5 = Abaixo do peso
+//entre 18.5 e 24.9 = peso normal
+//igual ou acima de 25 e abaixo de 29.9 = spbrepeso
+//acima de 29.9 obesidade
+
+function IMC(peso, altura) {
+    var imc = peso / (altura ** 2);
+    console.log("IMC: ", imc.toFixed(2));
+
+    if (imc <= 18.5) {
+        console.log("Abaixo do Peso");
+    }
+    else if (imc > 18.5 && imc <= 24.9) {
+        console.log("Peso Normal");
+    }
+    else if (imc >= 25 && imc <= 29.9) {
+        console.log("Sobrepeso");
+    }
+    else if (imc >= 30) {
+        console.log("Obesidade");
+    }
+}
+
+IMC(80, 1.80);
+IMC(70, 1.90);
+IMC(150,1.90)
+
+// verificar se é bissexto ou não
+function bissexto(ano) {
+    if (ano % 4 === 0 && ano % 100 != 0 || ano % 400 == 0) {
+        console.log("Ano bissexto   ");
+    } else {
+        console.log("Ano normal");
+    }
+}
+
+bissexto(2024);
+bissexto(2023);
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>
